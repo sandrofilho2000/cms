@@ -8,7 +8,6 @@ from stats.models import StatItem
 
 
 class WebsiteVersions(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=255, verbose_name="Nome da variante")
     color_palette = models.ForeignKey(
         "color_palette.ColorPalette",
