@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "colorfield",
     "corsheaders",
-    "api",
     "color_palette",
     "website_versions",
     "hero",
@@ -49,12 +48,12 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
 ]
 
-ROOT_URLCONF = "setup.urls"
+ROOT_URLCONF = "api.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -67,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "setup.wsgi.application"
+WSGI_APPLICATION = "api.wsgi.app"
 
 
 # Database

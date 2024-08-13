@@ -85,3 +85,8 @@ class WebSiteVersionDetailView(generics.GenericAPIView):
         }
 
         return Response(response_data)
+
+
+def home(request):
+    active_version = WebsiteVersions.objects.filter(active=True).first()
+    return render(request, "website_versions/base.html", {"version": active_version})
