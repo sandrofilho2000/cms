@@ -1,3 +1,13 @@
+export interface iSiteData {
+    color: string,
+    hero: iHero, 
+    stats: iStat[], 
+    features: iFeature[],
+    banner: iBanner,
+    faq: iFaq,
+}
+
+
 export interface iHero {
     id: number,
     name: string,

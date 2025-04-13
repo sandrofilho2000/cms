@@ -1,13 +1,10 @@
+import MainFooter from '@/components/mainFooter';
+import MainNav from '@/components/mainNav';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
-import MainNav from '@/components/mainNav';
-import MainFooter from '@/components/mainFooter';
-import { Toaster } from 'sonner';
 import Head from 'next/head';
-import RootStyles from '@/components/RootStyles';
-import { SitedataContextProvider } from '../context/sitedataContext';
-import axios from 'axios';
+import { Toaster } from 'sonner';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,7 +29,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <SitedataContextProvider>
       <html lang="en">
         <meta
           name="google-site-verification"
@@ -50,7 +46,6 @@ export default function RootLayout({
           ></script>
         </Head>
         <body className={inter.className}>
-          <RootStyles />
           <div className="">
             <MainNav />
           </div>
@@ -63,6 +58,5 @@ export default function RootLayout({
           <Toaster />
         </body>
       </html>
-    </SitedataContextProvider>
   );
 }

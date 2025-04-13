@@ -9,7 +9,7 @@ urlpatterns = [
     path("", views.home, name="home"),
     path("api/site_data", views.WebSiteVersionDetailView.as_view(), name="site_data"),
     path(
-        "api/site_data/<uuid:pk>/",
+        "api/site_data/<int:pk>/",
         views.WebSiteVersionDetailView.as_view(),
         name="site_data_by_pk",
     ),

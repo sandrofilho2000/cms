@@ -1,23 +1,16 @@
 'use client';
-import React, { useEffect } from 'react';
-import { Button } from '@/components/atoms/button';
-import Image from 'next/image';
-import Link from 'next/link';
 import Hero from '@/components/organisms/Hero';
-import { useSiteData } from '@/context/sitedataContext';
-import Stats from './Stats';
-import Features from './Features';
+import { iSiteData } from '@/interfaces';
+import RootStyles from '../RootStyles';
 import Banner from './Banner';
 import Faq from './Faq';
-const HomeMain = ({ site_data }: any) => {
-  const { siteData, setSiteData }: any = useSiteData();
+import Features from './Features';
+import Stats from './Stats';
 
-  useEffect(() => {
-    setSiteData(site_data);
-  }, []);
-
+const HomeMain = ({ site_data }: {site_data:iSiteData}) => {
   return (
     <main className="">
+      <RootStyles data={site_data.color} />
       <Hero data={site_data.hero} />
       <Stats data={site_data.stats} />
       <Features data={site_data.features} />

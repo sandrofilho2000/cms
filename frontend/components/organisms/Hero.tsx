@@ -1,13 +1,12 @@
 import { Button } from '@/components/atoms/button';
+import { iHero } from '@/interfaces';
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroTitle from '../atoms/hero-title';
 import InstallCode from '../installcode';
-import { iHero } from '@/interfaces';
 
 const Hero = ({ data }: { data: iHero }) => {
-  const { title, highlight_word, text, cta_link, cta_text, command_line, img } =
-    data;
+  const { title, highlight_word, text, cta_link, cta_text, command_line, img } = data;
   return (
     <section className="">
       <div className="max-w-7xl flex flex-col justify-center p-1 md:px-10 mx-auto sm:pt-10 lg:flex-row lg:justify-between items-center">

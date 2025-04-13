@@ -28,7 +28,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "colorfield",
     "corsheaders",
-    "color_palette",
     "website_versions",
     "hero",
     "icons",
@@ -74,10 +73,12 @@ WSGI_APPLICATION = "api.wsgi.app"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    "default": dj_database_url.config(
-        default="postgres://default:bE8IpW9iKscU@ep-sparkling-glade-a4wsj9k2.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require", conn_max_age=600, ssl_require=True
-    )
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -100,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "pt-br"
 
 TIME_ZONE = "UTC"
 

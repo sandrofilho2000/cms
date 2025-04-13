@@ -26,8 +26,8 @@ class WebsiteAdmin(admin.ModelAdmin):
                 <div style='width: 24px; height: 24px; border-radius: 50%; background-color: {};'></div>
                 <span>{}</span>
             </div>""",
-            obj.color_palette.main_color,
-            obj.color_palette.main_color,
+            obj.color,
+            obj.color,
         )
 
     main_color_preview.short_description = "Cor principal"

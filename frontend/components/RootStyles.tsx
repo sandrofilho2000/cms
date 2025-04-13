@@ -1,17 +1,6 @@
 'use client';
-import { useSiteData } from '@/context/sitedataContext';
-import { useEffect, useState } from 'react';
 
-export default function RootStyles() {
-  const [mainColor, setMainColor] = useState('');
-  const { siteData }: any = useSiteData();
-  useEffect(() => {
-    setMainColor(
-      siteData?.color_palette?.main_color
-        ? siteData.color_palette.main_color
-        : '#020817'
-    );
-  }, [siteData]);
+export default function RootStyles({data}:{data:string}) {
 
   return (
     <>
@@ -21,7 +10,7 @@ export default function RootStyles() {
       >
         {`
           :root {
-            --main-color: ${mainColor};
+            --main-color: ${data};
           }
 
           .main-bg {

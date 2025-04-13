@@ -36,8 +36,8 @@ class Hero(models.Model):
     img = models.FileField(upload_to="", null=True)
 
     class Meta:
-        verbose_name = "Sessão Hero"
-        verbose_name_plural = "Sessões Hero"
+        verbose_name = "Sessão hero"
+        verbose_name_plural = "Sessões hero"
 
     def __str__(self):
         return self.title

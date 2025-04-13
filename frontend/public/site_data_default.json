@@ -1,0 +1,76 @@
+{
+    "color": "#488EE1",
+    "hero": {
+        "id": 1,
+        "name": "Hero 1",
+        "title": "Kickstart your Next.js 14 website in minutes",
+        "highlight_word": "Next.js 14",
+        "text": "Inators UI is a collection of UI components and templates based on Tailwind and Shadcn/ui, just copy and use",
+        "command_line": "npx shadcn-ui@latest init",
+        "cta_text": "Browse all Components",
+        "cta_link": "#",
+        "img": "/media/hero_1_w6NvlYf.webp"
+    },
+    "stats": [
+        {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" fill=\"currentColor\" class=\"h-9 w-9 text-gray-100\"><polygon points=\"160 96.039 160 128.039 464 128.039 464 191.384 428.5 304.039 149.932 304.039 109.932 16 16 16 16 48 82.068 48 122.068 336.039 451.968 336.039 496 196.306 496 96.039 160 96.039\"></polygon><path d=\"M176.984,368.344a64.073,64.073,0,0,0-64,64h0a64,64,0,0,0,128,0h0A64.072,64.072,0,0,0,176.984,368.344Zm0,96a32,32,0,1,1,32-32A32.038,32.038,0,0,1,176.984,464.344Z\"></path><path d=\"M400.984,368.344a64.073,64.073,0,0,0-64,64h0a64,64,0,0,0,128,0h0A64.072,64.072,0,0,0,400.984,368.344Zm0,96a32,32,0,1,1,32-32A32.038,32.038,0,0,1,400.984,464.344Z\"></path></svg>",
+            "big_number": "150+",
+            "title": "Components"
+        },
+        {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" fill=\"currentColor\" class=\"h-9 w-9 text-gray-100\"><path d=\"M256,16C123.452,16,16,123.452,16,256S123.452,496,256,496,496,388.548,496,256,388.548,16,256,16ZM403.078,403.078a207.253,207.253,0,1,1,44.589-66.125A207.332,207.332,0,0,1,403.078,403.078Z\"></path><path d=\"M256,384A104,104,0,0,0,360,280H152A104,104,0,0,0,256,384Z\"></path><polygon points=\"205.757 228.292 226.243 203.708 168 155.173 109.757 203.708 130.243 228.292 168 196.827 205.757 228.292\"></polygon><polygon points=\"285.757 203.708 306.243 228.292 344 196.827 381.757 228.292 402.243 203.708 344 155.173 285.757 203.708\"></polygon></svg>",
+            "big_number": "30+",
+            "title": "Categories"
+        },
+        {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" fill=\"currentColor\" class=\"h-9 w-9 text-gray-100\"><path d=\"M425.706,142.294A240,240,0,0,0,16,312v88H160V368H48V312c0-114.691,93.309-208,208-208s208,93.309,208,208v56H352v32H496V312A238.432,238.432,0,0,0,425.706,142.294Z\"></path><rect width=\"32\" height=\"32\" x=\"80\" y=\"264\"></rect><rect width=\"32\" height=\"32\" x=\"240\" y=\"128\"></rect><rect width=\"32\" height=\"32\" x=\"136\" y=\"168\"></rect><rect width=\"32\" height=\"32\" x=\"400\" y=\"264\"></rect><path d=\"M297.222,335.1l69.2-144.173-28.85-13.848L268.389,321.214A64.141,64.141,0,1,0,297.222,335.1ZM256,416a32,32,0,1,1,32-32A32.036,32.036,0,0,1,256,416Z\"></path></svg>",
+            "big_number": "150+",
+            "title": "Users"
+        },
+        {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" fill=\"currentColor\" class=\"h-9 w-9 text-gray-100\"><path d=\"M454.423,278.957,328,243.839v-8.185a116,116,0,1,0-104,0V312H199.582l-18.494-22.6a90.414,90.414,0,0,0-126.43-13.367,20.862,20.862,0,0,0-8.026,33.47L215.084,496H472V302.08A24.067,24.067,0,0,0,454.423,278.957ZM192,132a84,84,0,1,1,136,65.9V132a52,52,0,0,0-104,0v65.9A83.866,83.866,0,0,1,192,132ZM440,464H229.3L79.141,297.75a58.438,58.438,0,0,1,77.181,11.91l28.1,34.34H256V132a20,20,0,0,1,40,0V268.161l144,40Z\"></path></svg>",
+            "big_number": "100%",
+            "title": "Copy Paste work"
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "img": "/media/feature_1_lrG9UTN.webp",
+            "title": "Easy to use UI elements based on Tailwind CSS and Shadcn/ui",
+            "subtitle": "MAKE NEXT.JS 14 YOUR NEW PLAYGROUND",
+            "text": "Inators UI is a toolkit for developers and designers to make creating nextjs client side as well as server side interfaces easier. Using Shadcn-ui components as base and added missing necessary components, Inators UI have multiple components to help you get started. Everything is modular and customizable to fit your project. From cards to buttons to blogs, you can quickly create a variety of layouts that is responsible for next.js 14 and look great on any screen."
+        },
+        {
+            "id": 2,
+            "img": "/media/feature_2_6pfgqlx.webp",
+            "title": "Easy to use UI elements based on Tailwind CSS and Shadcn/ui",
+            "subtitle": "MAKE NEXT.JS 14 YOUR NEW PLAYGROUND",
+            "text": "Inators UI is a toolkit for developers and designers to make creating nextjs client side as well as server side interfaces easier. Using Shadcn-ui components as base and added missing necessary components, Inators UI have multiple components to help you get started. Everything is modular and customizable to fit your project. From cards to buttons to blogs, you can quickly create a variety of layouts that is responsible for next.js 14 and look great on any screen."
+        }
+    ],
+    "banner": {
+        "id": 1,
+        "title": "Follow on github for more project updates",
+        "subtitle": "When I add something new, you will be the first to know",
+        "cta_text": "Github",
+        "cta_link": "#"
+    },
+    "faq": {
+        "id": 1,
+        "title": "FAQ",
+        "subtitle": "Here are some of our Frequently Asked Questions. If you have any other questions you'd like answered please feel free to contact me.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "What is Inators UI?",
+                "answer": "Inators UI is a free, open-source collection of UI elements based on Tailwind CSS, shadcn/ui and inspired from MambaUI that make it easy for anyone to build a next.js 14 web-app in minutes. Whether you're looking to create an e-commerce website or a personal blog, Inators UI have all the elements you need to get started right away.."
+            },
+            {
+                "id": 2,
+                "question": "Will it support server side components in next.js 14?",
+                "answer": "Yes, it is 100% compatible with next.js 14 without making any component client side."
+            }
+        ]
+    }
+}

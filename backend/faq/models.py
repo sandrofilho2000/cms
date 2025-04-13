@@ -9,7 +9,8 @@ class FaqItem(models.Model):
         return self.question
 
     class Meta:
-        verbose_name = "Perguntas e respostas"
+        verbose_name = "Pergunta e resposta"
+        verbose_name_plural = "Perguntas e respostas"
 
 
 class Faq(models.Model):
@@ -25,4 +26,4 @@ class Faq(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = "Sessão de Perguntas e Respostas"
+        verbose_name = "Sessão de perguntas e respostas"

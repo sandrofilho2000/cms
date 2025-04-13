@@ -1,8 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from banners.models import Banner
 from banners.serializers import BannerSerializer
-from color_palette.serializers import ColorPaletteSerializer
-from color_palette.models import ColorPalette
 from faq.models import Faq, FaqItem
 from faq.serializers import FaqItemSerializer, FaqSerializer
 from features.models import Feature
@@ -33,30 +31,20 @@ class WebSiteVersionDetailView(generics.GenericAPIView):
                 raise NotFound("No active website version found.")
 
         website_version = self.get_serializer(instance).data
-
-        color_palette_instance = get_object_or_404(
-            ColorPalette, pk=website_version["color_palette"]
-        )
-        color_palette = ColorPaletteSerializer(color_palette_instance).data
-
         hero_instance = get_object_or_404(Hero, pk=website_version["hero"])
         hero = HeroSerializer(hero_instance).data
 
         stats = []
 
         for stat in website_version["stats"]:
-
             icon_instance = get_object_or_404(Icon, pk=stat["icon"])
             icon = IconSerializer(icon_instance).data
-
             stat["icon"] = icon["code"]
-
             stats.append(stat)
 
         features = []
 
         for feature in website_version["features"]:
-
             feature_instance = get_object_or_404(Feature, pk=feature)
             feature = FeatureSerializer(feature_instance).data
             features.append(feature)
@@ -76,7 +64,7 @@ class WebSiteVersionDetailView(generics.GenericAPIView):
         faq["questions"] = questions
 
         response_data = {
-            "color_palette": color_palette,
+            "color": website_version.get("color"),
             "hero": hero,
             "stats": stats,
             "features": features,

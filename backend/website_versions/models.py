@@ -1,21 +1,13 @@
-from os import name
-from tabnanny import verbose
 from django.db import models
-import uuid
-
+from colorfield.fields import ColorField
 from features.models import Feature
 from stats.models import StatItem
 
 
 class WebsiteVersions(models.Model):
     name = models.CharField(max_length=255, verbose_name="Nome da variante")
-    color_palette = models.ForeignKey(
-        "color_palette.ColorPalette",
-        verbose_name="Paleta de cores",
-        on_delete=models.CASCADE,
-        default=0,
-    )
-    active = models.BooleanField(default=True)
+    color = ColorField(null=False, verbose_name="Cor principal", default="#e11d48")
+    active = models.BooleanField(verbose_name="Ativa?", default=True)
     hero = models.ForeignKey(
         "hero.Hero",
         verbose_name="Sessão Hero",
